@@ -242,16 +242,16 @@ module.exports = merge(commonConfig, {
       staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
       maximumFileSizeToCacheInBytes: 1024 * 1024 * 20, // 20mb
       runtimeCaching: [
-        {
-          urlPattern: /api\/v1\//,
-          handler: 'networkFirst',
-          options: {
-            cache: {
-              maxEntries: 50,
-              name: 'sandboxes-cache',
-            },
-          },
-        },
+        // {
+        //   urlPattern: /api\/v1\//,
+        //   handler: 'networkFirst',
+        //   options: {
+        //     cache: {
+        //       maxEntries: 50,
+        //       name: 'sandboxes-cache',
+        //     },
+        //   },
+        // },
         {
           urlPattern: /api\/v1\/dependencies/,
           handler: 'fastest',
