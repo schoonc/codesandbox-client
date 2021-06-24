@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, ThemeProvider, Stack } from '@codesandbox/components';
-import { Toasts, NotificationState, NotificationStatus } from '../lib';
+import { Toasts, NotificationState, NotificationStatus } from '../src';
 
 const state = new NotificationState();
 
